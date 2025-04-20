@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebnyaSekar buat PWEB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    .card {
+      border: none;
+    }
+    .card img {
+      object-fit: cover;
+      height: 180px;
+    }
+    .sidebar {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-light shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold text-primary" href="#">WebnyaSekar</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Cari artikel..." aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Cari</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Kolom Artikel -->
+      <div class="col-lg-8">
+        <h2 class="mb-4">Artikel Terbaru</h2>
+
+        <!-- Artikel Unggulan -->
+        <div class="card mb-4">
+          <img src="images/destinasi.png" class="card-img-top" alt="Destinasi Wisata">
+          <div class="card-body">
+            <h5 class="card-title">10 Destinasi Wisata Tersembunyi di Indonesia yang Wajib Dikunjungi</h5>
+            <p class="text-muted small">18 April 2025 · Budi Santoso · 24 Komentar</p>
+            <p class="card-text">Indonesia memiliki banyak tempat wisata tersembunyi yang belum banyak diketahui oleh wisatawan...</p>
+            <a href="post.html" class="btn btn-primary">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- Grid Artikel -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/klepon.png" class="card-img-top" alt="Klepon">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h6 class="text-info">Kuliner</h6>
+                  <h5 class="card-title">5 Makanan Tradisional Indonesia yang Mendunia</h5>
+                  <p class="text-muted small">16 April 2025 · Dewi Lestari</p>
+                </div>
+                <a href="post.html" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/startup.png" class="card-img-top" alt="Startup">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h6 class="text-info">Bisnis</h6>
+                  <h5 class="card-title">Perkembangan Startup di Indonesia Tahun 2025</h5>
+                  <p class="text-muted small">14 April 2025 · Rudi Hartono</p>
+                </div>
+                <a href="post.html" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/batik.png" class="card-img-top" alt="Batik">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h6 class="text-info">Budaya</h6>
+                  <h5 class="card-title">Melestarikan Batik di Era Digital</h5>
+                  <p class="text-muted small">12 April 2025 · Sri Nurlaila</p>
+                </div>
+                <a href="post.html" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/pendidikan.png" class="card-img-top" alt="Pendidikan">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h6 class="text-info">Pendidikan</h6>
+                  <h5 class="card-title">Transformasi Pendidikan di Indonesia Pasca Pandemi</h5>
+                  <p class="text-muted small">10 April 2025 · Ahmad Wijaya</p>
+                </div>
+                <a href="post.html" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sidebar mb-4">
+          <h5>Kategori</h5>
+          <ul class="list-unstyled">
+            <li>Wisata (24)</li>
+            <li>Kuliner (9)</li>
+            <li>Budaya (15)</li>
+            <li>Teknologi (6)</li>
+            <li>Bisnis (10)</li>
+            <li>Pendidikan (8)</li>
+          </ul>
+        </div>
+
+        <div class="sidebar mb-4">
+          <h5>Artikel Populer</h5>
+          <ul class="list-unstyled">
+            <li>7 Pantai Tersembunyi di Bali - 5 April 2025</li>
+            <li>Mengenal Jenis Kopi Nusantara</li>
+            <li>Tarian Tradisional yang Hampir Punah</li>
+          </ul>
+        </div>
+
+        <div class="sidebar">
+          <h5>Tag Populer</h5>
+          <span class="badge bg-secondary">#Indonesia</span>
+          <span class="badge bg-secondary">#Wisata</span>
+          <span class="badge bg-secondary">#Kuliner</span>
+          <span class="badge bg-secondary">#Digital</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 WebnyaSekar. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>
